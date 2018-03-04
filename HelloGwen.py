@@ -15,7 +15,23 @@ from time import sleep
 
 blue =  (0, 0, 255)
 green = (0, 255,0)
+yellow = (255,255,0)
 
-for num in range(1,6):
-    sense.show_letter(str(num),green)
-    sleep (5)
+color = yellow
+colorBackground = blue
+# command to show a letter
+# sense.show_letter(str(num),green)
+
+# command to show a line of text
+# sense.show_message("Hello world!")
+
+sense.clear()
+sleep 1
+sense.show_message("Hello Gwen", text_colour=color, back_colour=colorBackground)
+
+# for num in range(1,6):
+#    sense.show_letter(str(num),green)
+#    sleep (5)
+
+sleep 15
+sense.clear()
