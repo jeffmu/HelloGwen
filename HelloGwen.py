@@ -16,6 +16,6 @@ from time import sleep
 blue =  (0, 0, 255)
 green = (0, 255,0)
 
-for num in range(1,6)
+for num in range(1,6):
     sense.show_letter(str(num),green)
     sleep (5)
