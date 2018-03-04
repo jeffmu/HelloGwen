@@ -19,6 +19,9 @@ yellow = (255,255,0)
 
 color = yellow
 colorBackground = blue
+
+scroll_rate = .1
+
 # command to show a letter
 # sense.show_letter(str(num),green)
 
@@ -26,12 +29,12 @@ colorBackground = blue
 # sense.show_message("Hello world!")
 
 sense.clear()
-sleep 1
-sense.show_message("Hello Gwen", text_colour=color, back_colour=colorBackground)
+sleep(1)
+sense.show_message("Hello Gwen", text_colour=color, back_colour=colorBackground, scroll_speed=scroll_rate)
 
 # for num in range(1,6):
 #    sense.show_letter(str(num),green)
 #    sleep (5)
 
-sleep 15
+sleep(15)
 sense.clear()
